@@ -1,5 +1,3 @@
-from typing import List
-
 """"
 Algorithm:
 - Identify original list
@@ -12,8 +10,8 @@ Algorithm:
 """
 
 test_lst = [4, 500, 2, 1, 666, -5, 788, -69, 99999, 2, 3]
-ranked_lst = [0 for _ in range(len(test_lst))]
-big_num = 9223372036854775807  # max value  of 64_bit int
+ranked_lst = [0] * (len(test_lst))
+big_num = (2**63) - 1  # max value  of 64_bit int
 
 
 def is_full(lst):
@@ -23,8 +21,8 @@ def is_full(lst):
     return True
 
 
-def rank_list(raw_list: List) -> List:
-    copy_list = raw_list
+def rank_list(raw_list: list[int]) -> list[int]:
+    copy_list = raw_list.copy()
     size = len(copy_list)
     smallest_index = 0
     rank = 0
