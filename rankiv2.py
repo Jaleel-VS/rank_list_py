@@ -1,4 +1,4 @@
-# doesn't work for duplicates
+# doesn't work if there are duplicate values in the list
 
 unranked_list = [4, 500, 2, 1, 666, -5, 788, -69, 99999, 2, 3]
 size = len(unranked_list)
