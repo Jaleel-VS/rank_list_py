@@ -1,3 +1,5 @@
+# doesn't work for duplicates
+
 unranked_list = [4, 500, 2, 1, 666, -5, 788, -69, 99999, 2, 3]
 size = len(unranked_list)
 rank_transform = [0] * size
